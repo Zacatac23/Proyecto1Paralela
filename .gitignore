@@ -1,0 +1,8 @@
+# Binarios de medicion: se regeneran con "make", no tiene sentido versionarlos.
+bench_seq.exe
+bench_par.exe
+bench_seq_viejo.exe
+bench_par_viejo.exe
+
+# Temporal que usa gcc (ver el Makefile: TMP/TEMP pueden llegar apuntando a C:\Windows)
+.tmp/
