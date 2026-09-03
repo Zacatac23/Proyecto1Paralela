@@ -1,8 +1,19 @@
-# Binarios de medicion: se regeneran con "make", no tiene sentido versionarlos.
-bench_seq.exe
-bench_par.exe
-bench_seq_viejo.exe
-bench_par_viejo.exe
+# Binarios y artefactos de compilacion de C: se regeneran con "make" o gcc
+# directo, no tiene sentido versionarlos. avances.exe, avances_omp.exe y
+# avancesc.exe ya estaban commiteados de antes y esta regla no los
+# des-trackea; esto solo evita que un .exe NUEVO (bench_seq.exe,
+# bench_par.exe, bench_seq_viejo.exe, bench_par_viejo.exe, etc.) se sume
+# por accidente.
+*.exe
+*.o
+*.obj
+*.out
+*.dll
 
 # Temporal que usa gcc (ver el Makefile: TMP/TEMP pueden llegar apuntando a C:\Windows)
 .tmp/
+
+# Apuntes de estudio y repaso personal para la presentacion: no son parte
+# del entregable del proyecto.
+pruebas/
+
